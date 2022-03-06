@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,300&display=swap');
+/* APLICA A TODOS OS ELEMENTOS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+  background-image: linear-gradient(to right top, #ff00ff, #ff41e8, #ff64d6, #ff82cb, #ff9dc5, #ff9cbb, #fd9cb2, #fb9caa, #f68190, #f06475, #e74458, #dc143c);
+  border-left: 1px solid #FFB6C1;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+  background-image: linear-gradient(to right bottom, #ff69b4, #fa69bb, #f36ac1, #ed6bc8, #e56dce, #dc6ed2, #d36fd6, #ca70d9, #bd70da, #b070db, #a270db, #9370db);
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-image: linear-gradient(to left bottom, #ff69b4, #ff5eae, #ff53a8, #ff46a2, #ff369c, #ff2ba0, #ff1ca5, #ff00aa, #ff00bd, #ff00d1, #ff00e8, #ff00ff);
+}
+
+.Seção_de_Galerias {
+  width: 100%;
+  padding: 60px 0;
+  /* APLICA UM GRADIENTE AO FUNDO DA PÁGINA */
+  background-image: linear-gradient(to right top, #a020f0, #b31df4, #c518f7, #d713fa, #e80cfc, #f400e7, #fb00d3, #ff00c0, #ff1c99, #ff4379, #ff6460, #ff7f50);
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.Seção_de_Galerias .gallery {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.Seção_de_Galerias .image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.Seção_de_Galerias .image:hover img {
+  transform: scale(1.4) rotate(15deg);
+}
+
+.Seção_de_Galerias .image {
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Seção_de_Galerias h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.container-fluid{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+
+.container-fluid #insta{
+  margin-right: 700px;
+}
+
+.container-fluid .d-flex #home{
+  margin-right: 5px;
+}
+
+.borda {
+  width: 180px;
+  height: 4px;
+  background: purple;
+  margin: 30px auto;
+}
+
+#busca {
+  width: auto;
+}
+
+#busca2 {
+  width: auto;
+  border-color: #f400e7;
+}
+
+#busca2:hover {
+  background: rgb(213, 147, 226);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
+
+
+#home:hover {
+  background-image: linear-gradient(to bottom, #da70d6, #d78fe7, #d6aaf3, #dac4fb, #e3dbff, #e7e3ff, #edebff, #f3f3fe, #f0f0fd, #ececfc, #e9e9fb, #e6e6fa);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
+
+input,
+button {
+  font-size: 1.2em;
+  background: rgb(255, 255, 255);
+  border: 0;
+  margin-bottom: 1em;
+  color: rgb(0, 0, 0);
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+  border-radius: 3px;
+}
+
+/* PARA A PÁGINA SER RESPONSIVA, O FLEX É AJUSTADO DE ACORDO COM O
+  TAMANHO DA PÁGINA - DE 33%, 50% A 100% */
+@media screen and (max-width:960px) {
+  .gallery-section .image {
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image {
+    flex: 100%;
+  }
+}

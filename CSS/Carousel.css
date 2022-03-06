@@ -1,0 +1,185 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+input,
+button {
+    font-size: 1.2em;
+    background: rgb(255, 255, 255);
+    border: 0;
+    margin-bottom: 1em;
+    color: rgb(0, 0, 0);
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    border-radius: 3px;
+}
+
+#play {
+    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    margin-left: 40%;
+}
+
+#galeria {
+    background-image: linear-gradient(to top, #ff69b4, #f756bb, #ec43c4, #dd32cf, #c824dc, #9c56f2, #6770fe, #0082ff, #00a2ff, #00bbfb, #00cfe6, #40e0d0);
+    margin-left: 2%;
+}
+
+#play:hover {
+    background-image: linear-gradient(to top, #00ffff, #00ecff, #00d6ff, #63bdff, #9da0ff, #b68ef5, #cf79e3, #e560c9, #ed53bd, #f443b0, #fa31a2, #ff1493);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#galeria:hover {
+    background-image: linear-gradient(to top, #ff1493, #fa31a2, #f443b0, #ed53bd, #e560c9, #cf79e3, #b68ef5, #9da0ff, #63bdff, #00d6ff, #00ecff, #00ffff);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+/*
+body {
+	font-family: 'Poppins', sans-serif;
+}
+*/
+
+header .carousel-inner .item {
+    height: 100vh;
+}
+
+#contat_youtube:hover {
+    background-image: linear-gradient(to right bottom, #8929ad, #773fb3, #654db6, #5658b6, #4a61b3, #376cb8, #2677b9, #1b80b9, #008fbd, #009dbe, #1dabbc, #43b7b8);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#contat_youtube2:hover {
+    background-image: linear-gradient(to right bottom, #276174, #117484, #00878f, #009a95, #00ad96, #08ba96, #22c794, #3ad38f, #42de8f, #4be88d, #56f38b, #63fd88);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#contat_instagram:hover {
+    background-image: linear-gradient(to bottom, #405de6, #854fd5, #ac40bf, #c731a6, #d7298d, #e7377c, #f04b6c, #f5605f, #fd815b, #ffa15e, #ffbf6b, #ffdc80);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#contat_instagram2:hover {
+    background-image: linear-gradient(to bottom, #5851db, #8048cb, #993fbb, #ab38aa, #b73499, #ca358c, #d93c7e, #e34771, #f35d62, #fd7855, #ff934a, #fcaf45);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#contat:hover {
+    background-image: linear-gradient(to right bottom, #5c2774, #5c3083, #593a92, #5344a2, #4a4eb1, #4856bc, #445dc8, #3f65d3, #486bdd, #5172e8, #5a78f2, #637ffd);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 15px;
+    font-weight: 900;
+}
+
+.nav.navbar-nav.navbar-right {
+    margin: 25px 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.carousel-caption {
+    padding-bottom: 250px;
+    font-family: poppins;
+}
+
+.carousel-caption h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel-caption h2 span {
+    color: #EDBB00;
+}
+
+.carousel-caption a {
+    background: #EDBB00;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-indicators .active {
+    background-color: #EDBB00;
+    border-color: #EDBB00;
+}
+
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        padding-bottom: 350px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 30px;
+        padding: 20px 15px;
+    }
+
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-caption {
+        padding-bottom: 120px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption a {
+        padding: 10px 25px;
+    }
+}
